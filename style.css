@@ -1,0 +1,4520 @@
+@charset utf-8;
+/*--
+	Theme Name: drivingSchool
+	Description: A theme for Wordpress 3.7+ from wordpress-templates.biz Collection
+	Author: wordpress-templates.biz 
+	Author URL: http://www.wordpress-templates.biz 
+--*/
+
+
+/*  ***************************************************** GENERAL ********************************************/
+	
+	body, html { overflow-x: hidden; }
+	
+	@font-face {
+	    font-family: 'FontAwesome';
+	    src: url('../eot/fontawesome.eot');
+	    src: url('../eot/fontawesome.eot') format('embedded-opentype'),
+	         url('../woff2/fontawesome.woff2') format('woff2'),
+	         url('../woff/fontawesome.woff') format('woff'),
+	         url('../ttf/fontawesome.ttf') format('truetype'),
+	         url('../svg/fontawesome.svg#FontAwesome') format('svg');
+	}
+
+	
+	@media screen and (min-width: 1590px) {
+		
+		#sliderWrap .metaslider .ms-image img,
+		#photoBanner img {
+		  	width: 100% !important;
+		  	height: auto;	
+		  	margin: 0 auto !important;	  	
+	  	}
+	}  
+
+
+	/***************************************** STYLE FOR PREVIEW *********************/
+
+	.ta-theme-customizer {
+		background: #fff;
+		bottom: 0;
+		color: #f5f5f5;
+		height: 170px;
+		left: -262px;
+		margin-top: -100px;
+		padding: 0 20px;
+		position: fixed;
+		top: 50%;
+		-webkit-transition: all 0.8s ease 0s;
+		-o-transition: all 0.8s ease 0s;
+		transition: all 0.8s ease 0s; 
+		width: 262px;
+		z-index: 9999999;
+		-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+		box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	}
+		.ta-theme-customizer.active {
+		  left: 0;
+		}
+
+		.ta-theme-customizer .frontend-customizer {
+			left: 30px;
+			position: absolute;
+			right: 30px;
+			top: 0;
+			
+		}
+
+		.ta-theme-customizer .color-scheme-select {
+			margin: 10px 0 0;
+			overflow: hidden;
+		}
+
+		.ta-theme-customizer .color-scheme-select p {
+			color: #000;
+			font-family: 'Oswald',Arial,sans-serif;
+			font-size: 13px;
+			margin: 0 0 15px;
+			padding: 0;
+			text-transform: uppercase;
+		}
+
+		.ta-theme-customizer .color-scheme-select span {
+			border: 3px solid transparent;
+			cursor: pointer;
+			display: block;
+			float: left;
+			height: 40px;
+			margin: 0 10px 10px 0;
+			-webkit-transition: all 0.4s ease 0s;
+			-o-transition: all 0.4s ease 0s;
+			transition: all 0.4s ease 0s;
+			width: 40px;
+		}
+
+		.ta-theme-customizer #toggle-customizer {
+			background: #fff;
+			border-radius: 0 3px 3px 0;
+			color: #757575;
+			cursor: pointer;
+			font-size: 22px;
+			height: 40px;
+			line-height: 40px;
+			position: absolute;
+			right: -40px;
+			text-align: center;
+			top: 0;
+			width: 40px;
+			-webkit-box-shadow: 6px 0 9px -4px rgba(0, 0, 0, 0.5);
+			box-shadow: 6px 0 9px -4px rgba(0, 0, 0, 0.5);
+		}
+		.ta-theme-customizer #toggle-customizer i {
+		  display: inline-block;
+		  background: url(../gif/239.gif) center center no-repeat;
+		  width: 41px;
+		  height: 41px;
+		}
+
+
+
+		/*******************/
+
+.pr_color0 .customColor,
+body.pr_color0  a:hover,
+body.pr_color0  #photoBanner h1,
+.pr_color0 span.wpcf7-not-valid-tip,
+.pr_color0 #navArea ul .sub-menu li:hover > a,
+.pr_color0 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color0 .w50 li a:hover,
+body.pr_color0  #beforeFooter .w50 li a:hover,
+.pr_color0 #footer #footerBottom p a:hover,
+.pr_color0 .wrapTesti:before,
+.pr_color0 blockquote:before,
+.pr_color0 #error404 .error404-num,
+.pr_color0 #navArea ul li.current-menu-item > a,
+.pr_color0 #afterSliderArea a.read:after { color: #ffd200 !important; }
+
+
+.pr_color1 .customColor,
+body.pr_color1 a:hover,
+body.pr_color1  #photoBanner h1,
+.pr_color1 span.wpcf7-not-valid-tip,
+.pr_color1 #navArea ul .sub-menu li:hover > a,
+.pr_color1 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color1 .w50 li a:hover,
+body.pr_color1  #beforeFooter .w50 li a:hover,
+.pr_color1 #footer #footerBottom p a:hover,
+.pr_color1 .wrapTesti:before,
+.pr_color1 blockquote:before,
+.pr_color1 #error404 .error404-num,
+.pr_color1 #navArea ul li.current-menu-item > a,
+.pr_color1 #afterSliderArea a.read:after { color: #56AFDD !important; }
+
+
+.pr_color2 .customColor,
+body.pr_color2  a:hover,
+body.pr_color2  #photoBanner h1,
+.pr_color2 span.wpcf7-not-valid-tip,
+.pr_color2 #navArea ul .sub-menu li:hover > a,
+.pr_color2 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color2 .w50 li a:hover,
+body.pr_color2  #beforeFooter .w50 li a:hover,
+.pr_color2 #footer #footerBottom p a:hover,
+.pr_color2 .wrapTesti:before,
+.pr_color2 blockquote:before,
+.pr_color2 #afterSliderArea a.read:after,
+.pr_color2 #navArea ul li.current-menu-item > a,
+.pr_color2 #error404 .error404-num { color: #E0471D !important; }
+
+
+.pr_color3 .customColor,
+body.pr_color3  a:hover,
+body.pr_color3  #photoBanner h1,
+.pr_color3 span.wpcf7-not-valid-tip,
+.pr_color3 #navArea ul .sub-menu li:hover > a,
+.pr_color3 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color3 .w50 li a:hover,
+body.pr_color3  #beforeFooter .w50 li a:hover,
+.pr_color3 #footer #footerBottom p a:hover,
+.pr_color3 .wrapTesti:before,
+.pr_color3 blockquote:before,
+.pr_color3 #afterSliderArea a.read:after,
+.pr_color3 #navArea ul li.current-menu-item > a,
+.pr_color3 #error404 .error404-num { color: #9BBA2E !important; }
+
+
+.pr_color4 .customColor,
+body.pr_color4  a:hover,
+body.pr_color4  #photoBanner h1,
+.pr_color4 span.wpcf7-not-valid-tip,
+.pr_color4 #navArea ul .sub-menu li:hover > a,
+.pr_color4 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color4 .w50 li a:hover,
+body.pr_color4  #beforeFooter .w50 li a:hover,
+.pr_color4 #footer #footerBottom p a:hover,
+.pr_color4 .wrapTesti:before,
+.pr_color4 blockquote:before,
+.pr_color4 #afterSliderArea a.read:after,
+.pr_color4 #navArea ul li.current-menu-item > a,
+.pr_color4 #error404 .error404-num { color: #EF980D !important; }
+
+
+.pr_color5 .customColor,
+body.pr_color5  a:hover,
+body.pr_color5  #photoBanner h1,
+.pr_color5 span.wpcf7-not-valid-tip,
+.pr_color5 #navArea ul .sub-menu li:hover > a,
+.pr_color5 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color5 .w50 li a:hover,
+body.pr_color5  #beforeFooter .w50 li a:hover,
+.pr_color5 #footer #footerBottom p a:hover,
+.pr_color5 .wrapTesti:before,
+.pr_color5 blockquote:before,
+.pr_color5 #afterSliderArea a.read:after,
+.pr_color5 #navArea ul li.current-menu-item > a,
+.pr_color5 #error404 .error404-num { color: #A8A489 !important; }
+
+
+.pr_color6 .customColor,
+body.pr_color6  a:hover,
+body.pr_color6  #photoBanner h1,
+.pr_color6 span.wpcf7-not-valid-tip,
+.pr_color6 #navArea ul .sub-menu li:hover > a,
+.pr_color6 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color6 .w50 li a:hover,
+body.pr_color6  #beforeFooter .w50 li a:hover,
+.pr_color6 #footer #footerBottom p a:hover,
+.pr_color6 .wrapTesti:before,
+.pr_color6 blockquote:before,
+.pr_color6 #afterSliderArea a.read:after,
+.pr_color6 #navArea ul li.current-menu-item > a,
+.pr_color6 #error404 .error404-num { color: #BFBAA7 !important; }
+
+
+.pr_color7 .customColor,
+body.pr_color7  a:hover,
+body.pr_color7  #photoBanner h1,
+.pr_color7 span.wpcf7-not-valid-tip,
+.pr_color7 #navArea ul .sub-menu li:hover > a,
+.pr_color7 .accordion .accordion-heading a.accordion-toggle:hover,
+.pr_color7 .w50 li a:hover,
+body.pr_color7  #beforeFooter .w50 li a:hover,
+.pr_color7 #footer #footerBottom p a:hover,
+.pr_color7 .wrapTesti:before,
+.pr_color7 #afterSliderArea a.read:after,
+.pr_color7 #navArea ul li.current-menu-item > a,
+.pr_color7 #error404 .error404-num { color: #BEBEBE !important; }
+
+
+
+/**************/
+
+
+.pr_color0 #navArea ul > li:hover,
+.pr_color0 #sliderWrap #carouselWrap .item:hover a,
+.pr_color0 #afterSliderArea,
+.pr_color0 a.details:hover,
+.pr_color0 .single .reply a.comment-reply-link:hover,
+.pr_color0 #commentform input#submit:hover,
+.pr_color0 .single .reply a.comment-reply-link:hover,
+.pr_color0 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color0  #photoBanner #road,
+.pr_color0 #commentform input#submit:hover,
+.pr_color0 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color0 #primaryWrapContent .pagenavi span.current,
+.pr_color0 #primaryWrapContent .pagenavi a.current,
+.pr_color0 #primaryWrapContent .pagenavi .next.current,
+.pr_color0 #primaryWrapContent .pagenavi .last.current,
+.pr_color0 #primaryWrapContent .pagenavi .prev.current,
+.pr_color0 #primaryWrapContent .pagenavi .first.current,
+.pr_color0 #primaryWrapContent .pagenavi span:hover,
+.pr_color0 #primaryWrapContent .pagenavi a:hover,
+.pr_color0 #primaryWrapContent .pagenavi .next:hover,
+.pr_color0 #primaryWrapContent .pagenavi .last:hover,
+.pr_color0 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color0 #primaryWrapContent .pagenavi .first:hover,
+.pr_color0 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color0 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color0 .w50 li:hover:before,
+.pr_color0 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color0 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color0 #beforeFooter .w50 li:hover:before { background-color: #ffd200 !important;}
+
+
+.pr_color1 #navArea ul > li:hover,
+.pr_color1 #sliderWrap #carouselWrap .item:hover a,
+.pr_color1 #afterSliderArea,
+.pr_color1 a.details:hover,
+.pr_color1 .single .reply a.comment-reply-link:hover,
+.pr_color1 #commentform input#submit:hover,
+.pr_color1 .single .reply a.comment-reply-link:hover,
+.pr_color1 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color1  #photoBanner #road,
+.pr_color1 #commentform input#submit:hover,
+.pr_color1 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color1 #primaryWrapContent .pagenavi span.current,
+.pr_color1 #primaryWrapContent .pagenavi a.current,
+.pr_color1 #primaryWrapContent .pagenavi .next.current,
+.pr_color1 #primaryWrapContent .pagenavi .last.current,
+.pr_color1 #primaryWrapContent .pagenavi .prev.current,
+.pr_color1 #primaryWrapContent .pagenavi .first.current,
+.pr_color1 #primaryWrapContent .pagenavi span:hover,
+.pr_color1 #primaryWrapContent .pagenavi a:hover,
+.pr_color1 #primaryWrapContent .pagenavi .next:hover,
+.pr_color1 #primaryWrapContent .pagenavi .last:hover,
+.pr_color1 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color1 #primaryWrapContent .pagenavi .first:hover,
+.pr_color1 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color1 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color1 .w50 li:hover:before,
+.pr_color1 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color1 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color1 #beforeFooter .w50 li:hover:before { background-color: #56AFDD !important;}
+
+
+.pr_color2 #navArea ul > li:hover,
+.pr_color2 #sliderWrap #carouselWrap .item:hover a,
+.pr_color2 #afterSliderArea,
+.pr_color2 a.details:hover,
+.pr_color2 .single .reply a.comment-reply-link:hover,
+.pr_color2 #commentform input#submit:hover,
+.pr_color2 .single .reply a.comment-reply-link:hover,
+.pr_color2 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color2  #photoBanner #road,
+.pr_color2 #commentform input#submit:hover,
+.pr_color2 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color2 #primaryWrapContent .pagenavi span.current,
+.pr_color2 #primaryWrapContent .pagenavi a.current,
+.pr_color2 #primaryWrapContent .pagenavi .next.current,
+.pr_color2 #primaryWrapContent .pagenavi .last.current,
+.pr_color2 #primaryWrapContent .pagenavi .prev.current,
+.pr_color2 #primaryWrapContent .pagenavi .first.current,
+.pr_color2 #primaryWrapContent .pagenavi span:hover,
+.pr_color2 #primaryWrapContent .pagenavi a:hover,
+.pr_color2 #primaryWrapContent .pagenavi .next:hover,
+.pr_color2 #primaryWrapContent .pagenavi .last:hover,
+.pr_color2 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color2 #primaryWrapContent .pagenavi .first:hover,
+.pr_color2 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color2 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color2 .w50 li:hover:before,
+.pr_color2 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color2 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color2 #beforeFooter .w50 li:hover:before { background-color: #E0471D !important;}
+
+
+.pr_color3 #navArea ul > li:hover,
+.pr_color3 #sliderWrap #carouselWrap .item:hover a,
+.pr_color3 #afterSliderArea,
+.pr_color3 a.details:hover,
+.pr_color3 .single .reply a.comment-reply-link:hover,
+.pr_color3 #commentform input#submit:hover,
+.pr_color3 .single .reply a.comment-reply-link:hover,
+.pr_color3 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color3  #photoBanner #road,
+.pr_color3 #commentform input#submit:hover,
+.pr_color3 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color3 #primaryWrapContent .pagenavi span.current,
+.pr_color3 #primaryWrapContent .pagenavi a.current,
+.pr_color3 #primaryWrapContent .pagenavi .next.current,
+.pr_color3 #primaryWrapContent .pagenavi .last.current,
+.pr_color3 #primaryWrapContent .pagenavi .prev.current,
+.pr_color3 #primaryWrapContent .pagenavi .first.current,
+.pr_color3 #primaryWrapContent .pagenavi span:hover,
+.pr_color3 #primaryWrapContent .pagenavi a:hover,
+.pr_color3 #primaryWrapContent .pagenavi .next:hover,
+.pr_color3 #primaryWrapContent .pagenavi .last:hover,
+.pr_color3 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color3 #primaryWrapContent .pagenavi .first:hover,
+.pr_color3 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color3 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color3 .w50 li:hover:before,
+.pr_color3 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color3 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color3 #beforeFooter .w50 li:hover:before { background-color: #9BBA2E !important;}
+
+
+.pr_color4 #navArea ul > li:hover,
+.pr_color4 #sliderWrap #carouselWrap .item:hover a,
+.pr_color4 #afterSliderArea,
+.pr_color4 a.details:hover,
+.pr_color4 .single .reply a.comment-reply-link:hover,
+.pr_color4 #commentform input#submit:hover,
+.pr_color4 .single .reply a.comment-reply-link:hover,
+.pr_color4 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color4  #photoBanner #road,
+.pr_color4 #commentform input#submit:hover,
+.pr_color4 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color4 #primaryWrapContent .pagenavi span.current,
+.pr_color4 #primaryWrapContent .pagenavi a.current,
+.pr_color4 #primaryWrapContent .pagenavi .next.current,
+.pr_color4 #primaryWrapContent .pagenavi .last.current,
+.pr_color4 #primaryWrapContent .pagenavi .prev.current,
+.pr_color4 #primaryWrapContent .pagenavi .first.current,
+.pr_color4 #primaryWrapContent .pagenavi span:hover,
+.pr_color4 #primaryWrapContent .pagenavi a:hover,
+.pr_color4 #primaryWrapContent .pagenavi .next:hover,
+.pr_color4 #primaryWrapContent .pagenavi .last:hover,
+.pr_color4 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color4 #primaryWrapContent .pagenavi .first:hover,
+.pr_color4 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color4 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color4 .w50 li:hover:before,
+.pr_color4 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color4 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color4 #beforeFooter .w50 li:hover:before { background-color: #EF980D !important;}
+
+
+.pr_color5 #navArea ul > li:hover,
+.pr_color5 #sliderWrap #carouselWrap .item:hover a,
+.pr_color5 #afterSliderArea,
+.pr_color5 a.details:hover,
+.pr_color5 .single .reply a.comment-reply-link:hover,
+.pr_color5 #commentform input#submit:hover,
+.pr_color5 .single .reply a.comment-reply-link:hover,
+.pr_color5 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color5  #photoBanner #road,
+.pr_color5 #commentform input#submit:hover,
+.pr_color5 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color5 #primaryWrapContent .pagenavi span.current,
+.pr_color5 #primaryWrapContent .pagenavi a.current,
+.pr_color5 #primaryWrapContent .pagenavi .next.current,
+.pr_color5 #primaryWrapContent .pagenavi .last.current,
+.pr_color5 #primaryWrapContent .pagenavi .prev.current,
+.pr_color5 #primaryWrapContent .pagenavi .first.current,
+.pr_color5 #primaryWrapContent .pagenavi span:hover,
+.pr_color5 #primaryWrapContent .pagenavi a:hover,
+.pr_color5 #primaryWrapContent .pagenavi .next:hover,
+.pr_color5 #primaryWrapContent .pagenavi .last:hover,
+.pr_color5 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color5 #primaryWrapContent .pagenavi .first:hover,
+.pr_color5 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color5 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color5 .w50 li:hover:before,
+.pr_color5 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color5 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color5 #beforeFooter .w50 li:hover:before { background-color: #A8A489 !important;}
+
+
+.pr_color6 #navArea ul > li:hover,
+.pr_color6 #sliderWrap #carouselWrap .item:hover a,
+.pr_color6 #afterSliderArea,
+.pr_color6 a.details:hover,
+.pr_color6 .single .reply a.comment-reply-link:hover,
+.pr_color6 #commentform input#submit:hover,
+.pr_color6 .single .reply a.comment-reply-link:hover,
+.pr_color6 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color6  #photoBanner #road,
+.pr_color6 #commentform input#submit:hover,
+.pr_color6 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color6 #primaryWrapContent .pagenavi span.current,
+.pr_color6 #primaryWrapContent .pagenavi a.current,
+.pr_color6 #primaryWrapContent .pagenavi .next.current,
+.pr_color6 #primaryWrapContent .pagenavi .last.current,
+.pr_color6 #primaryWrapContent .pagenavi .prev.current,
+.pr_color6 #primaryWrapContent .pagenavi .first.current,
+.pr_color6 #primaryWrapContent .pagenavi span:hover,
+.pr_color6 #primaryWrapContent .pagenavi a:hover,
+.pr_color6 #primaryWrapContent .pagenavi .next:hover,
+.pr_color6 #primaryWrapContent .pagenavi .last:hover,
+.pr_color6 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color6 #primaryWrapContent .pagenavi .first:hover,
+.pr_color6 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color6 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color6 .w50 li:hover:before,
+.pr_color6 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color6 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color6 #beforeFooter .w50 li:hover:before { background-color: #BFBAA7 !important;}
+
+
+.pr_color7 #navArea ul > li:hover,
+.pr_color7 #sliderWrap #carouselWrap .item:hover a,
+.pr_color7 #afterSliderArea,
+.pr_color7 a.details:hover,
+.pr_color7 .single .reply a.comment-reply-link:hover,
+.pr_color7 #commentform input#submit:hover,
+.pr_color7 .single .reply a.comment-reply-link:hover,
+.pr_color7 .accordion .accordion-heading a.accordion-toggle:after,
+body.pr_color7  #photoBanner #road,
+.pr_color7 #commentform input#submit:hover,
+.pr_color7 #primaryWrapContent .wpcf7-form input[type="submit"]:hover,
+.pr_color7 #primaryWrapContent .pagenavi span.current,
+.pr_color7 #primaryWrapContent .pagenavi a.current,
+.pr_color7 #primaryWrapContent .pagenavi .next.current,
+.pr_color7 #primaryWrapContent .pagenavi .last.current,
+.pr_color7 #primaryWrapContent .pagenavi .prev.current,
+.pr_color7 #primaryWrapContent .pagenavi .first.current,
+.pr_color7 #primaryWrapContent .pagenavi span:hover,
+.pr_color7 #primaryWrapContent .pagenavi a:hover,
+.pr_color7 #primaryWrapContent .pagenavi .next:hover,
+.pr_color7 #primaryWrapContent .pagenavi .last:hover,
+.pr_color7 #primaryWrapContent .pagenavi .prev:hover,
+.pr_color7 #primaryWrapContent .pagenavi .first:hover,
+.pr_color7 #sliderWrap #carouselWrap .owl-buttons .owl-prev:hover,
+.pr_color7 #sliderWrap #carouselWrap .owl-buttons .owl-next:hover,
+.pr_color7 .w50 li:hover:before,
+.pr_color7 #sliderWrap .metaslider .flex-control-paging li a:hover,
+.pr_color7 #sliderWrap .metaslider .flex-control-paging li a.flex-active,
+body.pr_color7 #beforeFooter .w50 li:hover:before { background-color: #BEBEBE !important;}
+
+
+
+/************/
+
+body.pr_color0  h2 span,
+body.pr_color0 #beforeFooter h2 span,
+body.pr_color0 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color0 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color0 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color0 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color0 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color0 #galleryHolder .galleryItem:hover a img,
+body.pr_color0 #primaryWrapContent .wpcf7-form textarea:focus  { border-color: #ffd200 !important; }
+
+body.pr_color1 h2 span,
+body.pr_color1  #beforeFooter h2 span,
+body.pr_color1 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color1 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color1 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color1 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color1 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color1 #galleryHolder .galleryItem:hover a img,
+body.pr_color1 #primaryWrapContent .wpcf7-form textarea:focus { border-color: #56AFDD !important; }
+
+body.pr_color2  h2 span,
+body.pr_color2 #beforeFooter h2 span,
+body.pr_color2 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color2 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color2 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color2 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color2 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color2 #galleryHolder .galleryItem:hover a img,
+body.pr_color2 #primaryWrapContent .wpcf7-form textarea:focus { border-color: #E0471D !important; }
+
+body.pr_color3 h2 span,
+body.pr_color3 #beforeFooter h2 span,
+body.pr_color3 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color3 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color3 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color3 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color3 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color3 #galleryHolder .galleryItem:hover a img,
+body.pr_color3 #primaryWrapContent .wpcf7-form textarea:focus { border-color: #9BBA2E !important; }
+
+body.pr_color4 h2 span,
+body.pr_color4 #beforeFooter h2 span,
+body.pr_color4 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color4 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color4 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color4 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color4 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color4 #galleryHolder .galleryItem:hover a img,
+body.pr_color4 #primaryWrapContent .wpcf7-form textarea:focus { border-color: #EF980D !important; }
+
+body.pr_color5 h2 span,
+body.pr_color5 #beforeFooter h2 span,
+body.pr_color5 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color5 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color5 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color5 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color5 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color5 #galleryHolder .galleryItem:hover a img,
+body.pr_color5 #primaryWrapContent .wpcf7-form textarea:focus { border-color: #A8A489 !important; }
+
+body.pr_color6 h2 span,
+body.pr_color6 #beforeFooter h2 span,
+body.pr_color6 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color6 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color6 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color6 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color6 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color6 #galleryHolder .galleryItem:hover a img,
+body.pr_color6 #primaryWrapContent .wpcf7-form textarea:focus { border-color: #BFBAA7 !important; }
+
+body.pr_color7 h2 span,
+body.pr_color7 #beforeFooter h2 span,
+body.pr_color7 #primaryWrapContent .wpcf7-form input[type="text"]:focus,
+body.pr_color7 #primaryWrapContent .wpcf7-form input[type="email"]:focus,
+body.pr_color7 #primaryWrapContent .wpcf7-form input[type="tel"]:focus,
+body.pr_color7 #primaryWrapContent .wpcf7-form input[type="phone"]:focus,
+body.pr_color7 #primaryWrapContent .wpcf7-form input[type="number"]:focus,
+body.pr_color7 #galleryHolder .galleryItem:hover a img,
+body.pr_color7 #primaryWrapContent .wpcf7-form textarea:focus { border-color: #BEBEBE !important; }
+
+
+
+body #photoBanner #road .breadcrumb li a {
+	color: #272727 !important;
+}
+
+#theArt {
+	width: 800px;
+	height: 800px;
+	position: relative;
+	margin-top: 70px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-ms-perspective: 1000px;
+	-o-perspective: 1000px;
+	perspective: 1000px;
+	top: 9px;
+}
+#cube {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: none;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: none;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+	-ms-transform: none;
+}
+#cube div.panel {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+}
+#cube div.panelbottom1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+	z-index: 10;
+}
+#cube div.panelbottom2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.paneltop1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Top.png);
+	z-index: 10;
+}
+#cube div.paneltop2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Top.png);
+		z-index: -10;
+}
+#cube div.panelleft1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: 10;
+}
+#cube div.panelleft2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+			z-index: -10;
+}
+#cube div.panelright1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: 10;
+}
+#cube div.panelright2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+			z-index: -10;
+}
+
+#cube div.panelback1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: 10;
+}
+#cube div.panelback2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+			z-index: -10;
+}
+#cube div.panelfront1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Front_2.png);
+		z-index: 10;
+
+}
+#cube div.panelfront2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Front_Chocolate.png);
+			z-index: -10;
+
+}
+#cube div.panelfront3 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Front_Strawberry.png);
+			z-index: -10;
+
+}
+#cube div.panelfront4 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Front_Skim.png);
+			z-index: -10;
+
+}
+#cube p {
+	/* [disabled]text-align: center; */
+}
+#cube div.innerContainer {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#cube div.innerContainerbottom1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#cube div.innerContainerbottom2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#cube div.innerContainertop1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;;
+}
+#cube div.innerContainertop2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;;
+}
+#cube div.innerContainerleft1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#cube div.innerContainerleft2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#cube div.innerContainerright1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#cube div.innerContainerright2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#cube div.innerContainerback1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#cube div.innerContainerback2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;}
+#cube div.innerContainerFront1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#cube div.innerContainerFront2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#cube div.innerContainerFront3 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#cube div.innerContainerFront4 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#cube div.innerContainer p.show-buttons {
+	position: absolute;
+	bottom: 20px;
+	width: 800px;	
+}
+#show-buttons {
+	text-align:  center;	
+}
+#cube .front1 {
+	-webkit-transform: translateZ( 400px );
+	-moz-transform: translateZ( 400px ) ;
+	-ms-transform: translateZ( 400px );
+	-o-transform: translateZ( 400px );
+	transform: translateZ( 400px );
+
+}
+#cube .front2 {
+	-webkit-transform: translateZ( 400px );
+	-moz-transform: translateZ( 400px ) ;
+	-ms-transform: translateZ( 400px );
+	-o-transform: translateZ( 400px );
+	transform: translateZ( 400px );
+
+}
+#cube .front3 {
+	-webkit-transform: translateZ( 400px );
+	-moz-transform: translateZ( 400px ) ;
+	-ms-transform: translateZ( 400px );
+	-o-transform: translateZ( 400px );
+	transform: translateZ( 400px );
+
+}
+#cube .front4 {
+	-webkit-transform: translateZ( 400px );
+	-moz-transform: translateZ( 400px ) ;
+	-ms-transform: translateZ( 400px );
+	-o-transform: translateZ( 400px );
+	transform: translateZ( 400px );
+
+}
+#cube .back1 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back2 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right1 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right2 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left1 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left2 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#cube .top1 {
+	-webkit-transform: rotateX( 90deg ) translateZ( 400px );
+	-moz-transform: rotateX( 90deg ) translateZ( 400px );
+	-ms-transform: rotateX( 90deg ) translateZ( 400px );
+	-o-transform: rotateX( 90deg ) translateZ( 400px );
+	transform: rotateX( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .top2 {
+	-webkit-transform: rotateX( 90deg ) translateZ( 400px );
+	-moz-transform: rotateX( 90deg ) translateZ( 400px );
+	-ms-transform: rotateX( 90deg ) translateZ( 400px );
+	-o-transform: rotateX( 90deg ) translateZ( 400px );
+	transform: rotateX( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom1 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom2 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube.show-front1 {
+	-webkit-transform: translateZ( -400px );
+	-moz-transform: translateZ( -400px );
+	-ms-transform: translateZ( -400px );
+	-o-transform: translateZ( -400px );
+	transform: translateZ( -400px );
+}
+#cube.show-front2 {
+	-webkit-transform: translateZ( -400px );
+	-moz-transform: translateZ( -400px );
+	-ms-transform: translateZ( -400px );
+	-o-transform: translateZ( -400px );
+	transform: translateZ( -400px );
+}
+#cube.show-front3 {
+	-webkit-transform: translateZ( -400px );
+	-moz-transform: translateZ( -400px );
+	-ms-transform: translateZ( -400px );
+	-o-transform: translateZ( -400px );
+	transform: translateZ( -400px );
+}
+#cube.show-front4 {
+	-webkit-transform: translateZ( -400px );
+	-moz-transform: translateZ( -400px );
+	-ms-transform: translateZ( -400px );
+	-o-transform: translateZ( -400px );
+	transform: translateZ( -400px );
+}
+#cube.show-back1 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back2 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-right1 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right2 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-left1 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left2 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-top1 {
+	-webkit-transform: translateZ( -400px ) rotateX( -90deg );
+	-moz-transform: translateZ( -400px ) rotateX( -90deg );
+	-ms-transform: translateZ( -400px ) rotateX( -90deg );
+	-o-transform: translateZ( -400px ) rotateX( -90deg );
+	transform: translateZ( -400px ) rotateX( -90deg );
+}
+#cube.show-top2 {
+	-webkit-transform: translateZ( -400px ) rotateX( -90deg );
+	-moz-transform: translateZ( -400px ) rotateX( -90deg );
+	-ms-transform: translateZ( -400px ) rotateX( -90deg );
+	-o-transform: translateZ( -400px ) rotateX( -90deg );
+	transform: translateZ( -400px ) rotateX( -90deg );
+}
+#cube.show-bottom1 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom2 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+
+.toppicture{
+	width: 100%;
+	height: 100%;
+	background-position: 0% 0%;
+}
+
+.label{
+	color: #000000;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 1em;
+}
+.span1{
+	width: 90%;
+	font-size: large;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.span1a{
+	width: 70%;
+	font-size: large;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.span2{
+	width: 42.5%;
+	float: left;
+	font-size: large;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	margin-left: 5%;
+	margin-right: 2.5%;
+}
+#cube div.panelbottom1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+	z-index: 10;
+}
+#cube div.panelbottom2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom3 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom4 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom5 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom6 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom7 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom8 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom9 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom10 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom.png);
+		z-index: -10;
+}
+#cube div.panelbottom11 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Chocolate.png);
+		z-index: -10;
+}
+#cube div.panelbottom12 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom13 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom14 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom15 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom16 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom17 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom18 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom19 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom20 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom21 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelbottom22 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Bottom_Skim.png);
+		z-index: -10;
+}
+
+
+
+#cube div.innerContainerbottom1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom3 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom4 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom5 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom6 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom7 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom8 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom9 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom10 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom11 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom12 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom13 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom14 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom15 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom16 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom17 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom18 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom19 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom20 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerbottom21 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerbottom22 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	
+	
+	
+#cube .bottom1 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom2 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom3 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom4 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom5 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom6 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom7 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom8 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom9 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom10 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom11 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom12 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom13 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom14 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom15 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+
+    backface-visibility: hidden;
+}
+#cube .bottom16 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom17 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom18 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom19 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom20 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom21 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .bottom22 {
+	-webkit-transform: rotateX( -90deg ) translateZ( 400px );
+	-moz-transform: rotateX( -90deg ) translateZ( 400px );
+	-ms-transform: rotateX( -90deg ) translateZ( 400px );
+	-o-transform: rotateX( -90deg ) translateZ( 400px );
+	transform: rotateX( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+#cube.show-bottom1 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom2 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom3 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom4 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom5 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom6 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom7 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom8 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom9 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom10 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom11 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom12 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom13 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom14 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom15 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom16 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom17 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom18 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom19 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom20 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom21 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+#cube.show-bottom22 {
+	-webkit-transform: translateZ( -400px ) rotateX( 90deg );
+	-moz-transform: translateZ( -400px ) rotateX( 90deg );
+	-ms-transform: translateZ( -400px ) rotateX( 90deg );
+	-o-transform: translateZ( -400px ) rotateX( 90deg );
+	transform: translateZ( -400px ) rotateX( 90deg );
+}
+
+
+
+
+
+
+#cube div.panelback1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+	z-index: 10;
+}
+#cube div.panelback2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback3 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback4 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback5 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback6 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback7 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback8 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback9 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback10 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back.png);
+		z-index: -10;
+}
+#cube div.panelback11 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Chocolate.png);
+	z-index: -10;
+}
+#cube div.panelback12 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback13 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback14 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback15 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback16 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback17 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback18 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback19 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback20 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback21 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelback22 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Back_Skim.png);
+		z-index: -10;
+}
+
+
+
+#cube div.innerContainerback1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback3 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback4 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback5 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback6 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback7 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback8 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback9 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback10 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback11 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback12 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback13 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback14 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback15 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback16 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback17 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback18 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback19 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback20 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerback21 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerback22 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	
+	
+	
+#cube .back1 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back2 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back3 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back4 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back5 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back6 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back7 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back8 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back9 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back10 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back11 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back12 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back13 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back14 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back15 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back16 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back17 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back18 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back19 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back20 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back21 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .back22 {
+	display: none;
+	-webkit-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-moz-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-ms-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	-o-transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+	transform: rotateX( -180deg ) translateZ( 400px ) rotateZ( 180deg );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+#cube.show-back1 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back2 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back3 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back4 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back5 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back6 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back7 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back8 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back9 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back10 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back11 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back12 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back13 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back14 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back15 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back16 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back17 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back18 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back19 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back20 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back21 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+#cube.show-back22 {
+	-webkit-transform: translateZ( -400px ) rotateY( 180deg );
+	-moz-transform: translateZ( -400px ) rotateY( 180deg );
+	-ms-transform: translateZ( -400px ) rotateY( 180deg );
+	-o-transform: translateZ( -400px ) rotateY( 180deg );
+	transform: translateZ( -400px ) rotateY( 180deg );
+}
+
+#cube div.panelleft1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+	z-index: 10;
+}
+#cube div.panelleft2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft3 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft4 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft5 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft6 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft7 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft8 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft9 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft10 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelleft11 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Chocolate.png);
+	z-index: -10;
+}
+#cube div.panelleft12 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+	z-index: -10;
+}
+#cube div.panelleft13 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft14 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft15 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft16 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft17 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft18 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft19 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft20 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft21 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelleft22 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Skim.png);
+		z-index: -10;
+}
+
+
+
+#cube div.innerContainerleft1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft3 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft4 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft5 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft6 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft7 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft8 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft9 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft10 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft11 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft12 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft13 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft14 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft15 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft16 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft17 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft18 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft19 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft20 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerleft21 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerleft22 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	
+	
+	
+#cube .left1 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left2 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left3 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left4 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left5 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left6 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left7 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left8 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left9 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left10 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left11 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left12 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left13 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left14 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left15 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left16 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left17 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left18 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left19 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left20 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left21 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .left22 {
+	-webkit-transform: rotateY( -90deg ) translateZ( 400px );
+	-moz-transform: rotateY( -90deg ) translateZ( 400px );
+	-ms-transform: rotateY( -90deg ) translateZ( 400px );
+	-o-transform: rotateY( -90deg ) translateZ( 400px );
+	transform: rotateY( -90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+#cube.show-left1 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left2 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left3 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left4 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left5 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left6 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left7 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left8 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left9 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left10 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left11 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left12 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left13 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left14 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left15 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left16 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left17 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left18 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left19 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left20 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left21 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+#cube.show-left22 {
+	-webkit-transform: translateZ( -400px ) rotateY( 90deg );
+	-moz-transform: translateZ( -400px ) rotateY( 90deg );
+	-ms-transform: translateZ( -400px ) rotateY( 90deg );
+	-o-transform: translateZ( -400px ) rotateY( 90deg );
+	transform: translateZ( -400px ) rotateY( 90deg );
+}
+
+
+
+
+
+
+#cube div.panelright1 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+	z-index: 10;
+}
+#cube div.panelright2 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright3 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright4 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright5 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright6 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright7 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright8 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright9 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright10 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_3.png);
+		z-index: -10;
+}
+#cube div.panelright11 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Chocolate.png);
+	z-index: -10;
+}
+#cube div.panelright12 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+	z-index: -10;
+}
+#cube div.panelright13 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright14 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright15 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright16 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright17 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright18 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright19 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright20 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright21 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Strawberry.png);
+		z-index: -10;
+}
+#cube div.panelright22 {
+	display: block;
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	background-color: #FFFFFF;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-image: url(../images/Milk_Carton_Side_Skim.png);
+		z-index: -10;
+}
+
+
+
+#cube div.innerContainerright1 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright2 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright3 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright4 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright5 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright6 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright7 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright8 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright9 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright10 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright11 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright12 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright13 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright14 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright15 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright16 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright17 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright18 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright19 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright20 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	#cube div.innerContainerright21 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+#cube div.innerContainerright22 {
+	position: relative;
+	height: 400px;
+	background-size: contain;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	}
+	
+	
+	
+#cube .right1 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right2 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right3 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right4 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right5 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right6 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right7 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right8 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right9 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right10 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right11 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right12 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right13 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right14 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right15 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right16 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right17 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right18 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right19 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right20 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right21 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#cube .right22 {
+	-webkit-transform: rotateY( 90deg ) translateZ( 400px );
+	-moz-transform: rotateY( 90deg ) translateZ( 400px );
+	-ms-transform: rotateY( 90deg ) translateZ( 400px );
+	-o-transform: rotateY( 90deg ) translateZ( 400px );
+	transform: rotateY( 90deg ) translateZ( 400px );
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+#cube.show-right1 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right2 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right3 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right4 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right5 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right6 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right7 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right8 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right9 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right10 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right11 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right12 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right13 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right14 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right15 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right16 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right17 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right18 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right19 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right20 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right21 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
+#cube.show-right22 {
+	-webkit-transform: translateZ( -400px ) rotateY( -90deg );
+	-moz-transform: translateZ( -400px ) rotateY( -90deg );
+	-ms-transform: translateZ( -400px ) rotateY( -90deg );
+	-o-transform: translateZ( -400px ) rotateY( -90deg );
+	transform: translateZ( -400px ) rotateY( -90deg );
+}
